@@ -1,44 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap"
-    rel="stylesheet" />
-
-  <title>Roboshop Project</title>
-</head>
-
-<body>
-  <header>
-    <h1>Welcome to the future</h1>
-  </header>
-
-  <main class="container">
-    <section>
-      <div class="cards">
-        <h1 class="h1">Cards</h1>
-        <div class="card">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptatem!</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Roboshop Project</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav only-mobile">
+        <a href="#home" class="active"></a>
+        <div id="myLinks">
+          <a href="#aboutus">About us</a>
+          <a href="#product1">Product 1</a>
+          <a href="#product2">Product 2</a>
+          <a href="#product3">Product 3</a>
         </div>
-        <div class="card">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dolore.</p>
-        </div>
-        <div class="card">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, saepe.</p>
-        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="hamburger-icon">&#xf0c9;</i>
+        </a>
       </div>
-    </section>
 
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
 
+      <!-- <button class="hamburger-icon">&#xf0c9;</button> -->
 
-  </main>
+      <nav>
+        <a href="#" target="_blank">About us</a>
+        <a href="#" target="_blank">Product 1</a>
+        <a href="#" target="_blank">Product 2</a>
+        <a href="#" target="_blank">Product 3</a>
+      </nav>
 
-  <footer></footer>
-</body>
+      <h1>Welcome to the future</h1>
+    </header>
 
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab
+        explicabo nobis dicta odio esse iste non. Omnis, assumenda odit?
+      </p>
+
+      <fieldset>
+        <legend>Contact us!</legend>
+        <form action="" method="POST">
+          <div>
+            <div>
+              <div>
+                <label for="firstname">First Name:*</label>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="lastname">Last Name:*</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Your last name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <label for="email">Email:*</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="phone">Phone:</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+4976 00000"
+                  pattern="\(?\+\(?49\)?[
+                   ()]?([- ()]?\d[- ()]?){10}"
+                />
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label for="textarea">Your message for us!*</label>
+              <textarea
+                name="textarea"
+                placeholder="I´m interestted in product 3 and want more information..."
+                id="textarea"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </fieldset>
+    </main>
+
+    <footer>
+      <span>&copy; 2021 All rights reserved</span>
+      <span>Created by Andrejs Grocs & Peony Langner</span>
+    </footer>
+  </body>
 </html>
