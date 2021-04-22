@@ -14,9 +14,31 @@
   </head>
   <body>
     <header>
-      <button class="hamburger-icon" onclick="toggleNavigation()">
-        &#xf0c9;
-      </button>
+      <div class="topnav only-mobile">
+        <a href="#home" class="active"></a>
+        <div id="myLinks">
+          <a href="#aboutus">About us</a>
+          <a href="#product1">Product 1</a>
+          <a href="#product2">Product 2</a>
+          <a href="#product3">Product 3</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="hamburger-icon">&#xf0c9;</i>
+        </a>
+      </div>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+
+      <!-- <button class="hamburger-icon">&#xf0c9;</button> -->
 
       <nav>
         <a href="#" target="_blank">About us</a>
@@ -35,6 +57,9 @@
       </p>
     </main>
 
-    <footer></footer>
+    <footer>
+      <span>&copy; 2021 All rights reserved</span>
+      <span>Created by Andrejs Grocs & Peony Langner</span>
+    </footer>
   </body>
 </html>

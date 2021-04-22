@@ -34,24 +34,86 @@ nav {
   display: none;
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #000;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.active {
+  height: 50px;
+  color: white;
+}
+
 .hamburger-icon {
   font-family: fontawesome;
   border: none;
-  padding: 10px;
   background: none;
+  font-size: 1.5rem;
   color: #fff;
-  font-size: 2.5rem;
   text-shadow: 1px 1px 5px #534c4b;
-  float: right;
 }
 
 p {
   font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
 }
 
+main {
+  height: 200px;
+}
+
+footer {
+  background-image: url(../IMG/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+footer > span {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 auto;
+  line-height: 2;
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 3.6rem;
+    padding: 200px 40px 0px 40px;
   }
 
   .only-mobile {
@@ -73,7 +135,7 @@ p {
   nav a,
   nav a:visited {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-weight: bold;
@@ -83,7 +145,21 @@ p {
     text-shadow: 1px 1px 2px #fff;
     border-bottom: 1px solid #fff;
   }
+
+  header {
+    height: 60vh;
+  }
 }
 
 @media (min-width: 992px) {
+  h1 {
+    padding: 200px 40px 0px 40px;
+  }
+  nav {
+    width: 55%;
+  }
+
+  footer > span {
+    font-size: 1.4rem;
+  }
 }
