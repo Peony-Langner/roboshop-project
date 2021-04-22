@@ -1,0 +1,33 @@
+:root {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+body {
+  border: 5px solid red;
+}
+
+@media (min-width: 768px) {
+  body {
+    border: 5px solid green;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    border: 5px solid blue;
+  }
+}
