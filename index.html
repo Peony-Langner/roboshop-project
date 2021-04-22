@@ -55,6 +55,77 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab
         explicabo nobis dicta odio esse iste non. Omnis, assumenda odit?
       </p>
+
+      <fieldset>
+        <legend>Contact us!</legend>
+        <form action="" method="POST">
+          <div>
+            <div>
+              <div>
+                <label for="firstname">First Name:*</label>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="lastname">Last Name:*</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Your last name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <label for="email">Email:*</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="phone">Phone:</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+4976 00000"
+                  pattern="\(?\+\(?49\)?[
+                   ()]?([- ()]?\d[- ()]?){10}"
+                />
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label for="textarea">Your message for us!*</label>
+              <textarea
+                name="textarea"
+                placeholder="I´m interestted in product 3 and want more information..."
+                id="textarea"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </fieldset>
     </main>
 
     <footer>

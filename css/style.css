@@ -86,7 +86,39 @@ p {
 }
 
 main {
-  height: 200px;
+}
+
+fieldset {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #6391a1;
+  font-family: montserrat, Arial, Helvetica, sans-serif;
+}
+legend {
+  padding: 8px;
+  font-size: 1.1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 15px 0px;
+  padding: 10px;
+  border: 1px solid #6391a1;
+}
+
+input {
+  height: 40px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  background-color: #6391a1;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #6391a1;
 }
 
 footer {
@@ -153,13 +185,46 @@ footer > span {
 
 @media (min-width: 992px) {
   h1 {
-    padding: 200px 40px 0px 40px;
+    padding: 150px 40px 0px 40px;
   }
   nav {
     width: 55%;
   }
 
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  }
+
+  div > div,
+  .row {
+    width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  legend {
+    padding: 8px;
+    font-size: 1.5rem;
+  }
+
+  footer {
+    height: 150px;
+  }
+
   footer > span {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
