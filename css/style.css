@@ -81,12 +81,58 @@ nav {
   text-shadow: 1px 1px 5px #534c4b;
 }
 
-p {
-  font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+/* andrew start */
+.container {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #637081;
 }
 
-main {
+.cardimg {
+  padding: 20px;
+  width: 150px;
+  height: 150px;
 }
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 230px;
+  height: 230px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-left: 20px;
+  background-color: #7c98b3;
+}
+
+.card:hover {
+  background-color: #d8d8d8;
+}
+.cards {
+  text-align: center;
+  margin: auto;
+  color: rgb(0, 0, 0);
+}
+
+p {
+  font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.cardh2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/* andrew end */
 
 fieldset {
   padding: 20px;
@@ -181,6 +227,40 @@ footer > span {
   header {
     height: 60vh;
   }
+  h3 {
+    font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+  }
+  .card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 270px;
+    height: 270px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 20px;
+    background-color: #7c98b3;
+  }
+  .cardimg {
+    padding: 20px;
+    width: 170px;
+    height: 170px;
+  }
+  .h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  .container {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #abbed6;
+  }
 }
 
 @media (min-width: 992px) {
@@ -218,6 +298,44 @@ footer > span {
   legend {
     padding: 8px;
     font-size: 1.5rem;
+  }
+
+  h3 {
+    font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+  }
+  .card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 20px;
+    background-color: #7c98b3;
+  }
+  .cardimg {
+    padding: 20px;
+    width: 210px;
+    height: 210px;
+  }
+  .h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+  .container {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #637081;
+  }
+  .cardcontainer {
+    margin-top: 30px;
   }
 
   footer {

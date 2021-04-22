@@ -50,83 +50,121 @@
       <h1>Welcome to the future</h1>
     </header>
 
-    <main>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab
-        explicabo nobis dicta odio esse iste non. Omnis, assumenda odit?
-      </p>
+    <main class="container">
+      <section>
+        <div class="cards">
+          <h1 class="h1">Robot Types</h1>
+          <p>
+            The Roboshop present a different robot units and solutions for
+            personal and industrial needs.
+          </p>
+        </div>
 
-      <fieldset>
-        <legend>Contact us!</legend>
-        <form action="" method="POST">
+        <div class="cardcontainer">
+          <div class="card">
+            <h3>Personal Robots</h3>
+            <img
+              src="./IMG/spot-masthead-mobile.jpg"
+              alt="robot"
+              class="cardimg"
+            />
+            <p class="cardh2">Robots for home use, inspections and security</p>
+            <p>Prices from <strong>1000 EUR</strong></p>
+          </div>
+          <div class="card">
+            <h3>Personal assistants, AI</h3>
+            <img
+              src="./IMG/Zenbo-by-Asus.jpg"
+              alt="assistant robot"
+              class="cardimg"
+            />
+            <p class="cardh2">Ai assistants</p>
+            <p>Prices from <strong>150 EUR</strong></p>
+          </div>
+          <div class="card">
+            <h3>Industrial Solutions</h3>
+            <img
+              src="./IMG/CYBERTECH_2.jpg"
+              alt="industrial robot"
+              class="cardimg"
+            />
+            <p class="cardh2">Industrial solutions</p>
+            <p>Prices From <strong>7000 EUR</strong></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <fieldset>
+      <legend>Contact us!</legend>
+      <form action="" method="POST">
+        <div>
           <div>
             <div>
-              <div>
-                <label for="firstname">First Name:*</label>
-                <input
-                  type="text"
-                  name="firstname"
-                  id="firstname"
-                  placeholder="Your name"
-                  required
-                />
-              </div>
-
-              <div>
-                <label for="lastname">Last Name:*</label>
-                <input
-                  type="text"
-                  name="lastname"
-                  id="lastname"
-                  placeholder="Your last name"
-                  required
-                />
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <label for="email">Email:*</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your email"
-                  required
-                />
-              </div>
-
-              <div>
-                <label for="phone">Phone:</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="+4976 00000"
-                  pattern="\(?\+\(?49\)?[
-                   ()]?([- ()]?\d[- ()]?){10}"
-                />
-                <span></span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div>
-              <label for="textarea">Your message for us!*</label>
-              <textarea
-                name="textarea"
-                placeholder="I´m interestted in product 3 and want more information..."
-                id="textarea"
-                cols="30"
-                rows="10"
+              <label for="firstname">First Name:*</label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Your name"
                 required
-              ></textarea>
+              />
             </div>
-            <button type="submit">Submit</button>
+
+            <div>
+              <label for="lastname">Last Name:*</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Your last name"
+                required
+              />
+            </div>
           </div>
-        </form>
-      </fieldset>
-    </main>
+
+          <div>
+            <div>
+              <label for="email">Email:*</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+4976 00000"
+                pattern="\(?\+\(?49\)?[
+                   ()]?([- ()]?\d[- ()]?){10}"
+              />
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="textarea">Your message for us!*</label>
+            <textarea
+              name="textarea"
+              placeholder="I´m interestted in product 3 and want more information..."
+              id="textarea"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </fieldset>
 
     <footer>
       <span>&copy; 2021 All rights reserved</span>
